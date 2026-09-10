@@ -2,6 +2,10 @@ resource "aws_security_group" "this" {
   name        = "novasphere-${var.name}"
   description = "Regles du serveur ${var.name}"
 
+  lifecycle {
+    create_before_destroy = true
+  }
+
   ingress {
     description = "SSH restreint"
     from_port   = 22
