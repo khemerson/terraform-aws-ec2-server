@@ -1,0 +1,5 @@
+# Copy to terraform.tfvars and replace every value. terraform.tfvars is git-ignored.
+region     = "eu-west-3"
+ami_id     = "ami-0123456789abcdef0"
+key_name   = "my-keypair"
+admin_cidr = "203.0.113.10/32"
